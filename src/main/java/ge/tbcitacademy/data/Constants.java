@@ -9,8 +9,7 @@ public class Constants {
 
     // Button texts
     public static final String ENABLE_BUTTON_TEXT = "Enable";
-    public static final String DISABLE_BUTTON_TEXT = "Disable";
-    public static final String ENABLED_TEXT = "It's enabled!";
+
 
     // Label texts
     public static final String MAIN_HEADING_TEXT = "Dynamic Controls";
