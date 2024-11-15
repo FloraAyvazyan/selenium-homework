@@ -18,4 +18,9 @@ public class Constants {
     // Input field text
     public static final String INPUT_FIELD_TEXT = "TBC IT Academy";
 
+    //WebElements
+    public static final String EXPECTED_HREF_KEYWORD = "animate";
+    public static final String EXPECTED_ONCLICK_ATTRIBUTE = "deleteElement()";
+    public static final String ADDED_MANUALLY_CLASS = "added-manually";
+
 }
