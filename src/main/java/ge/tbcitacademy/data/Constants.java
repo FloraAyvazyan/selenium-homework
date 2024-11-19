@@ -23,4 +23,13 @@ public class Constants {
     public static final String EXPECTED_ONCLICK_ATTRIBUTE = "deleteElement()";
     public static final String ADDED_MANUALLY_CLASS = "added-manually";
 
+
+    //formsAndWaits/day1
+    public static final String CUSTOM_DROPDOWN_URL = "https://tympanus.net/Tutorials/CustomDropDownListStyling/";
+    public static final String NATIVE_DROPDOWN_URL = "https://techcanvass.com/examples/register.html";
+    public static final String DYNAMIC_CONTROLS_URL2 = "http://the-internet.herokuapp.com/dynamic_controls";
+    public static final String PROGRESS_BAR_URL = "https://demoqa.com/progress-bar";
+
+
+
 }
