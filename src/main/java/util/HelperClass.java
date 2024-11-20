@@ -1,22 +1,13 @@
 package util;
 
-
-// ### Step 2
-
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-// 1) It should take two parameters:
-//   1) element of type `Object` (or a Generic type, for example T if you want to use Generics).
-//   2) visibleText of type `String`.
-// 2) If `element` parameter is an instance of `Select` class, use the
-// second parameter to choose an option.
-// 3) If `element` parameter is an instance of `WebElement` class,
-// then it is not a native `select` tag. Use the second parameter to
-// locate the correct option and click on it.
-//   1) Use your Java/Locators knowledge and imagination to the
-//   fullest and create a good implementation.
+import java.util.List;
+import java.util.NoSuchElementException;
+
 public class HelperClass {
     public static <T> void universalSelector(T element, String visibleText) {
         if (element instanceof Select) {
@@ -35,5 +26,21 @@ public class HelperClass {
 
         System.out.println("I AM A FIX");
 
+    }
+
+    public static void getCellData(WebDriver driver, String tableXPath, String text) {
+        WebElement table = driver.findElement(By.xpath(tableXPath));
+        List<WebElement> tableRows = table.findElements(By.tagName("tr"));
+        for (WebElement row : tableRows) {
+            List<WebElement> rowEntries = row.findElements(By.xpath(".//th | .//td"));
+            for (WebElement entry : rowEntries) {
+                String elementText = entry.getText();
+                if (elementText.equals(text)) {
+                    System.out.println(elementText);
+                    return;
+                }
+            }
+        }
+        throw new NoSuchElementException("Element with text '" + text + "' not found in the table.");
     }
 }
