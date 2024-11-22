@@ -45,4 +45,12 @@ public class Constants {
             PHEDRUM4_TEXT = "Phedrum4",
             FRENCH_TEXT = "French",
             ACCOUNTANT_TEXT = "Accountant";
+
+    //exceptionsAndJSExecutor/day1
+    public static final String WEBDRIVERUNIVERSITY = "http://webdriveruniversity.com/To-Do-List/index.html",
+            AUTOMATIONEXERCISE = "https://automationexercise.com/",
+            PRACTICE_MAGIC_XPATH = "//li[contains(text(),'Practice magic')]",
+            DELETE_BUTTON_XPATH = "//li[text()=' Practice magic']//span",
+            TECHLISTIC = " https://www.techlistic.com/2017/02/automate-demo-web-table-with-selenium.html";
+
 }
