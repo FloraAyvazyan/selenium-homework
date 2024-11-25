@@ -74,8 +74,7 @@ public class CookiesTest extends BaseClass {
                 .findFirst()
                 .ifPresent(WebElement::click);
 
-        System.out.println("Hi" +
-                " How are you?");
+
     }
 }
 
