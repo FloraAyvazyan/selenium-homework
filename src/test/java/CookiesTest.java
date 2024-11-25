@@ -73,6 +73,8 @@ public class CookiesTest extends BaseClass {
                 .filter(suggestion -> suggestion.getText().equalsIgnoreCase("Georgia"))
                 .findFirst()
                 .ifPresent(WebElement::click);
+
+        System.out.println("Hi");
     }
 }
 
