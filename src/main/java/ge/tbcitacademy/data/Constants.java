@@ -53,4 +53,7 @@ public class Constants {
             DELETE_BUTTON_XPATH = "//li[text()=' Practice magic']//span",
             TECHLISTIC = " https://www.techlistic.com/2017/02/automate-demo-web-table-with-selenium.html";
 
+    //crossBrowserAndCookis/day1
+    public static final String DEMO_AUTOMATIONTESTING_URL = "https://demo.automationtesting.in/AutoComplete.html";
+
 }
